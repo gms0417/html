@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let String = "Javascript jQuery Ajax";
+      const regexp1 = new RegExp("Ajax");
+
+      // exec : Array 리스트로 나옴
+      console.log(regexp1.exec(String));
+      console.log("------------");
+
+      // test : True, false값만 추출
+      console.log(regexp1.test(String));
+
+      // match : exec랑 동일
+      console.log("------------");
+      console.log(String.match(regexp1));
+
+      // 인덱스 번호만 나옴
+      console.log("------------");
+      console.log(String.search(regexp1));
+    </script>
+  </body>
+</html>

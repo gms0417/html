@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        /* 패딩과 보더를 포함하여 쓰겟다 */
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .flexbg .left {
+        padding: 25px;
+        background: #3498db;
+        order: 1;
+      }
+      .flexbg .right {
+        padding: 25px;
+        background: #34495e;
+        order: 3;
+      }
+
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+      }
+      @media screen (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vel
+          dolore cumque fuga repellendus placeat, recusandae illo provident quae
+          magni nisi iure. Unde culpa saepe voluptates quidem facere numquam
+          neque!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+          vel dolore cumque fuga repellendus placeat, recusandae illo provident
+          quae magni nisi iure. Unde culpa saepe voluptates quidem facere
+          numquam neque!Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Esse vel dolore cumque fuga repellendus placeat, recusandae illo
+          provident quae magni nisi iure. Unde culpa saepe voluptates quidem
+          facere numquam neque!Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Esse vel dolore cumque fuga repellendus placeat,
+          recusandae illo provident quae magni nisi iure. Unde culpa saepe
+          voluptates quidem facere numquam neque!Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Esse vel dolore cumque fuga repellendus
+          placeat, recusandae illo provident quae magni nisi iure. Unde culpa
+          saepe voluptates quidem facere numquam neque!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vel
+          dolore cumque fuga repellendus placeat, recusandae illo provident quae
+          magni nisi iure. Unde culpa saepe voluptates quidem facere numquam
+          neque!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+          vel dolore cumque fuga repellendus placeat, recusandae illo provident
+          quae magni nisi iure. Unde culpa saepe voluptates quidem facere
+          numquam neque!Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Esse vel dolore cumque fuga repellendus placeat, recusandae illo
+          provident quae magni nisi iure. Unde culpa saepe voluptates quidem
+          facere numquam neque!Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Esse vel dolore cumque fuga repellendus placeat,
+          recusandae illo provident quae magni nisi iure. Unde culpa saepe
+          voluptates quidem facere numquam neque!Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Esse vel dolore cumque fuga repellendus
+          placeat, recusandae illo provident quae magni nisi iure. Unde culpa
+          saepe voluptates quidem facere numquam neque!
+        </p>
+      </main>
+      <aside class="sidebar left">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+        perspiciatis illum sequi animi corporis iusto voluptate veniam
+      </aside>
+      <aside class="sidebar right">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+        perspiciatis illum sequi animi corporis iusto voluptate veniam
+      </aside>
+    </div>
+  </body>
+</html>

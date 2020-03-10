@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    // 문서가 로드되면 body안에 ul과 li태그를 생성 한 후 넣기
+    window.onload = function() {
+      let output = "<ul>";
+      output += "<li>JAVASCRIPT</li>";
+      output += "<li>CSS</li>";
+      output += "<li>JQUERY</li>";
+      output += "</ul>";
+      document.body.append(output);
+      document.body.innerHTML = output;
+    };
+  </script>
+</html>

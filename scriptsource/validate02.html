@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem Ipsum dolor sit amet consectetur adipisicing elit. Saepe magnam sed
+      officiis, sit minus consequuntur, esse, voluptas enim blanditiis
+      cupiditate cumque. Accusantium beatae rem libero, eveniet eum asperiores
+      laborum rerum.<br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe magnam sed
+      officiis, sit minus consequuntur, esse, voluptas enim blanditiis
+      cupiditate cumque. Accusantium beatae rem libero, eveniet eum asperiores
+      laborum rerum.
+    </p>
+    <script>
+      let p1 = document.querySelector("p").innerText;
+      console.log("g 플래그 사용");
+      console.log(p1.match(/ipsum/g));
+      // g: 글로벌. 전체문장에서 찾아줌
+
+      console.log("gi 플래그 사용");
+      console.log(p1.match(/ipsum/gi));
+    </script>
+  </body>
+</html>
